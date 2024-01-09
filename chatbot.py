@@ -1,5 +1,3 @@
-#Note: The openai-python library support for Azure OpenAI is in preview.
-      #Note: This code sample requires OpenAI Python library version 0.28.1 or lower.
 import os
 import openai
 
@@ -20,3 +18,5 @@ completion = openai.ChatCompletion.create(
   presence_penalty=0,
   stop=None
 )
+
+print(completion.choices[0].message.content)

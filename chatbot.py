@@ -4,7 +4,7 @@ import os
 import openai
 
 openai.api_type = "azure"
-openai.api_base = "https://gpt4openaimodel.openai.azure.com/openai/deployments/GPT4-32k/chat/completions?api-version=2023-07-01-preview"
+openai.api_base = "https://gpt4openaimodel.openai.azure.com/"
 openai.api_version = "2023-07-01-preview"
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
